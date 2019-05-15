@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>计算与背景图</title>
+</head>
+<body>
+  <div class="box-example"></div>
+  <style>
+    .box-example {
+      height: 200px;
+      /* 背景图设置 */
+      background: #222 url('https://image.ibb.co/fUL9nS/wolf.png') no-repeat;
+      /* background-position:(水平方向,垂直方向):属性设置背景图像的起始位置
+        如果您仅规定了一个关键词，那么第二个值将是"center"
+        calc()函数用一个表达式作为它的参数,用这个表达式的结果作为值。
+        这个表达式可以是任何如下操作符的组合，
+        采用标准操作符处理法则的简单表达式(加减乘除
+        乘数中至少要有一个是 <number> 类型的
+        被除数（/右面的数）必须是 <number> 类型的)
+      */
+      background-position: calc(100% - 20px) calc(100% - 20px);
+    }
+
+  </style>
+</body>
+</html>
