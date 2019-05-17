@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Button</title>
+</head>
+<body>
+  <div>
+    <button class="button">button</button>
+  </div>
+  <style>
+    
+    .button{
+      width: 150px;
+      height: 40px;
+      background: green;
+      color: #fff;
+      border: 0;
+      /* outline 边框颜色 */
+      outline: none;
+      position: relative;
+    }
+    .button:after,.button:before{
+      border: 1 solid red;
+      transition: all 0.5s;
+      content: '';
+      height: 24px;
+      position: absolute;
+      width: 24px;
+    }
+    .button:before {
+      border-top: 2px solid #c47135;
+      left: 0px;
+      top: -5px;
+    }
+    /* :after 在元素后插入新内容 */
+    .button:after {
+      border-bottom: 2px solid #c47135;
+      bottom: -5px;
+      right: 0px;
+    }
+    .button:hover:after,.button:hover:before{
+      width: 100%;
+    }
+  </style>
+</body>
+</html>
